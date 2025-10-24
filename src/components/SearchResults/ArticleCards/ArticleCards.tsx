@@ -5,7 +5,6 @@ import ArticleCard from "./ArticleCard/ArticleCard";
 import "./ArticleCards.css";
 
 import mock_article_1_picture from "../../../assets/mock_article_1_picture.png";
-import mock_article_2_picture from "../../../assets/mock_article_2_picture.png";
 
 interface Article {
   date: string;

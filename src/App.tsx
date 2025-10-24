@@ -17,21 +17,12 @@ import Authorization from "./components/Authorization/Authorization";
 import Search from "./components/Search/Search";
 import SearchResults from "./components/SearchResults/SearchResults";
 import user_pic_example from "./assets/user_pic_example.png";
-
-
-interface AppState {
-  isLoggedIn: boolean;
-  checkAuthStatus: () => void;
-  userTariff: string;
-  userName: string;
-  userPicture: string;
-}
-
 function App() {
   const { isLoggedIn, checkAuthStatus } = useAuth();
-  const [userTariff, setUserTariff] = useState<string>("beginner");
   const [userName, setUserName] = useState<string>("");
   const [userPicture, setUserPicture] = useState<string>(user_pic_example);
+   const [userTariff] = useState<string>("beginner");   
+
 
   useEffect(() => {
     if (!isLoggedIn) {

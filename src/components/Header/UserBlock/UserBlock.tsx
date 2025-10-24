@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+
 
 import UserActions from "./UserActions/UserActions";
 import UserInfo from "./UserInfo/UserInfo";
@@ -27,11 +27,9 @@ const UserBlock: React.FC<UserBlockProps> = ({
   isMenuVisible,
 }) => {
   const [isLoadingActions, setIsLoadingActions] = useState<boolean>(true);
-  const navigate = useNavigate();
+  
 
-  const handleLoginClick = () => {
-    navigate("/auth");
-  };
+  
 
   useEffect(() => {
     setIsLoadingActions(true);

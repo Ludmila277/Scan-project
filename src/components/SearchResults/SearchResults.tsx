@@ -18,7 +18,7 @@ const SearchResults: React.FC<SearchResultsProps> = () => {
   const [searchData, setSearchData] = useState<any>(null);
   const [documentsData, setDocumentsData] = useState<any>(null);
   const [isError, setIsError] = useState(false);
-  const [isAllDataLoaded, setIsAllDataLoaded] = useState(false);
+
 
   const { isLoggedIn } = useAuth();
   const navigate = useNavigate();

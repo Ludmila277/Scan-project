@@ -7,10 +7,7 @@ interface UserActionsProps {
   isLoading: boolean;
 }
 
-interface CompanyInfo {
-  usedCompanyCount: number;
-  companyLimit: number;
-}
+
 
 interface ApiResponse {
   eventFiltersInfo: {
